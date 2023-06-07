@@ -454,7 +454,7 @@ function sendLink() {
 	Kakao.Link.sendDefault({
 		objectType: "feed",
 		content: {
-			title: "소중한 분들을 초대합니다❤︎",
+			title: "소중한 분들을 초대합니다💛",
 			// description: "소중한 분들을 초대합니다❤︎",
 			imageUrl: kImg,
 			link: {
