@@ -50,6 +50,11 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 		<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=xlcbmfhi4h&submodules=geocoder"></script>
+		<!-- <script
+			src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.1/kakao.min.js"
+			integrity="sha384-eKjgHJ9+vwU/FCSUG3nV1RKFolUXLsc6nLQ2R1tD0t4YFPCvRmkcF8saIfOZNWf/"
+			crossorigin="anonymous"
+		></script> -->
 		<script type="text/javascript" src="./assets/js/kakao.min.js"></script>
 
 		<link rel="stylesheet" href="./assets/css/custom.css" loading="lazy" />
@@ -126,7 +131,7 @@
 			<a class="sound"><i class="fa fa-volume-off"></i></a>
 		</div>
 		<audio id="videoplay" autoplay loop>
-			<source src="./assets/content/pop_playlist.mp3" type="audio/mp3" />
+			<source src="./assets/pop_playlist.mp3" type="audio/mp3" />
 		</audio>
 
 		<div class="pop_acct" id="acctBox" style="display: none">
@@ -297,15 +302,15 @@
 				<div class="introMent anibox f17">
 					<div id="intro-ment-area">
 						<p>
-							<strong>두 마음</strong>이 만나<br />
-							<strong>하나의 사랑</strong>이 되어<br />
-							<strong>평생</strong>을 <strong>약속</strong>하게 되었습니다.<br /><br />
-							이 마음 그대로<br />
-							이 마음 보다 <strong>더</strong><br />
-							<strong>아껴주며 사랑</strong>하겠습니다.<br /><br />
-							<strong>새로운 발걸음</strong>을 내딛는 날,<br />
-							함께 축하해 주시면<br />
-							소중한 추억으로 간직하겠습니다. <br /><br />
+							저희 두 사람의 작은 만남이<br />
+							사랑의 결실을 이루어<br />
+							<span style="color: rgb(0, 0, 0)"> <strong>소중한 결혼식</strong></span>
+							을 올리게 되었습니다.<br /><br />
+							평생 서로 귀하게 여기며<br />
+							첫 마음 그대로 존중하고 배려하며 살겠습니다.<br /><br />
+							오로지 믿음과 사랑을 약속하는 날<br />
+							오셔서 축복해 주시면 더없는 기쁨으로<br />
+							간직하겠습니다.
 						</p>
 					</div>
 				</div>
@@ -335,6 +340,12 @@
 							</div>
 						</div>
 					</div>
+					<!-- <div class="telAreaNone">
+						<div class="pic_0_ins line introBottomDisplay" style="display: none; margin-bottom: 70px; background: #ddd"></div>
+					</div>
+					<div class="telArea">
+						<a class="int_buttn" onclick="openContactPop()"><i class="fa fa-phone-alt"></i>&nbsp;연락하기</a>
+					</div> -->
 				</div>
 			</div>
 			<div class="sectionMg gallLayerWrapper layer layer03 clearfix">
@@ -344,7 +355,11 @@
 				</div>
 				<div class="clearfix anibox">
 					<div class="swiper-container mySwiper" style="overflow: visible">
-						<div class="swiper-wrapper" id="thumblistid"></div>
+						<div class="swiper-wrapper" id="thumblistid">
+							<!-- <div class="swiper-slide ss" data-order="0">
+								<img class="vs imgblk" style="width: 100%" src="./assets/img/284A0164.JPG" />
+							</div> -->
+						</div>
 						<div class="swiper-button-next swiper-opts"></div>
 						<div class="swiper-button-prev swiper-opts"></div>
 						<div class="swiper-pagination swiper-opts tiledImageBox" style="padding-top: 10px"></div>
@@ -365,7 +380,11 @@
 				<div class="zoomGallWrapper">
 					<a class="close"><img src="./assets/img/icon/close.svg" /></a>
 					<div id="fullbox">
-						<div class="swiper-wrapper" id="photoDetail"></div>
+						<div class="swiper-wrapper" id="photoDetail">
+							<!-- <div class="swiper-slide">
+								<div class="swiper-zoom-container"><img class="vs imgblk" src="./assets/img/284A9868.JPG" /></div>
+							</div> -->
+						</div>
 						<div class="swiper-button-next swiper-opts"></div>
 						<div class="swiper-button-prev swiper-opts"></div>
 						<div class="swiper-pagination swiper-opts"></div>
@@ -477,6 +496,7 @@
 						</a>
 						<textarea id="addr1" class="txtnone">서울시 강서구 마곡중앙5로 6 보타닉 푸르지오시티 주차장</textarea>
 					</div>
+					<!-- <div class="tbox"><a class="tel" href="tel:0420000000">Tel. 0420000000</a></div> -->
 				</div>
 				<div class="map_wrapper anibox">
 					<div id="map"></div>
@@ -521,6 +541,7 @@
 						<p>&nbsp;</p>
 						<p>● 주차장 안내</p>
 						<p>&nbsp;&nbsp;<u>건물 주차장</u></p>
+						<!-- <p>&nbsp; &nbsp;· 영남 주차장 (상황에 따라 운영합니다.)</p> -->
 					</li>
 				</ul>
 			</div>
@@ -539,6 +560,257 @@
 					</div>
 				</div>
 			</div>
+			<!-- <div id="gustbk_op" class="guestbook-write-page wpopclass anibox_attend">
+				<form method="post" autocomplete="off">
+					<input type="hidden" name="_token" value="M9cqvYefETyPYbpQpFeIQPEVSR6aX1cUYkgkC7he" />
+					<div class="frm">
+						<div class="frmIn">
+							<a class="clse" style="top: 11px; right: 25px; font-size: 26px; width: 30px; height: 30px"
+								><img style="width: 100%; height: 100%" src="/src/img/close.svg"
+							/></a>
+							<div class="hea">방명록 (축하 글) 작성</div>
+							<div class="att-fdver">
+								<span class="nm"
+									><span class="text">이름<b class="spot"></b></span
+								></span>
+								<input type="text" placeholder="이름을 입력해 주세요." name="name" maxlength="30" autocomplete="off" />
+							</div>
+							<div class="att-fdver">
+								<span class="nm"
+									><span class="text">비밀번호<b class="spot"></b></span
+								></span>
+								<input type="password" placeholder="비밀번호를 입력해 주세요." name="password" maxlength="30" autocomplete="off" />
+							</div>
+							<div class="att-fdver">
+								<span class="nm"
+									><span class="text">내용<b class="spot"></b></span
+								></span>
+								<textarea
+									type="text"
+									placeholder="내용을 입력해 주세요. (최대 100자)"
+									name="note"
+									maxlength="100"
+									autocomplete="off"
+								></textarea>
+							</div>
+
+							<div style="margin-top: 40px">
+								<a class="att-fdver-btn">신랑 & 신부에게 <b>축하 글 전달하기</b></a>
+							</div>
+							<div style="height: 70px"></div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div id="gustbk_list" class="guestbook-list-page wpopclass anibox_attend">
+				<form method="post" autocomplete="off">
+					<input type="hidden" name="_token" value="M9cqvYefETyPYbpQpFeIQPEVSR6aX1cUYkgkC7he" />
+					<div class="frm">
+						<div class="frmIn">
+							<a class="clse" style="top: 11px; right: 25px; font-size: 26px; width: 30px; height: 30px"
+								><img style="width: 100%; height: 100%" src="/src/img/close.svg"
+							/></a>
+							<div class="hea">방명록 (축하 글) 전체보기</div>
+							<ul class="rsvpMlist pc-hidden" id="load-books-by"></ul>
+							<div class="morebtnwrap" id="more-btn-books-by">
+								<a class="morebtn" onclick="loadBooks()">더보기<br /><i class="fa fa-arrow-down"></i></a>
+							</div>
+							<div style="height: 70px"></div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="sectionMg layer layer03 clearfix">
+				<div class="sectionHead anibox">
+					<div class="enstr">GUESTBOOK</div>
+					<span class="name">방명록</span>
+				</div>
+				<div class="clearfix">
+					<div class="books-swiper">
+						<ul class="books clearfix swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="b">
+									<img class="close" data-idx="7677" src="/src/img/x.png" />
+									<p class="top">
+										<img src="./assets/img/books_01.png" />
+									</p>
+									<p class="n">
+										사랑하는 내친구 범규야! 정말 온맘다해 축하해♡ 반짝반짝 향기로운 꽃같은 날들만 가득하길 기도할게~ 사랑해 이쁜이!!! 우리
+										세림이 잘 부탁드립니다🧡💛💚💙💜🤎🖤
+									</p>
+									<p class="bottom">
+										<span class="from">- 서초구민 이예쁨 -</span><br />
+										<span class="date">2022-04-14 19:32:40</span>
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="b">
+									<img class="close" data-idx="7675" src="/src/img/x.png" />
+									<p class="top">
+										<img src="./assets/img/books_01.png" />
+									</p>
+									<p class="n">Happy wedding day💝 Looking forward your beautiful days! See you then🙏😍</p>
+									<p class="bottom">
+										<span class="from">- 💜 -</span><br />
+										<span class="date">2022-04-14 19:30:59</span>
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="b">
+									<img class="close" data-idx="7674" src="/src/img/x.png" />
+									<p class="top">
+										<img src="./assets/img/books_01.png" />
+									</p>
+									<p class="n">범규야 결혼 진심으로 축하해. 평생 벅찬 사랑 받으며 늘 행복하기만을 바랄게❤🧡💛</p>
+									<p class="bottom">
+										<span class="from">- 최윤정 -</span><br />
+										<span class="date">2022-04-14 19:30:39</span>
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="b">
+									<img class="close" data-idx="7673" src="/src/img/x.png" />
+									<p class="top">
+										<img src="./assets/img/books_01.png" />
+									</p>
+									<p class="n">예쁜사랑 예쁜꼼꼼 행복하게 잘살아 ~~ 🤍💙 검은머리 파뿌리될때까지 이수지 정세림 영원하길 ❤️</p>
+									<p class="bottom">
+										<span class="from">- ❤️수지❤️ -</span><br />
+										<span class="date">2022-04-14 19:30:08</span>
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="b">
+									<img class="close" data-idx="7671" src="/src/img/x.png" />
+									<p class="top">
+										<img src="./assets/img/books_01.png" />
+									</p>
+									<p class="n">언니~~~~♡♡ 결혼 축하드립니다^^ 사진이 너무너무 이쁘고 잘어울리는 한쌍의 커플이에요🥰🥰</p>
+									<p class="bottom">
+										<span class="from">- 김은지 -</span><br />
+										<span class="date">2022-04-14 19:28:44</span>
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="b">
+									<img class="close" data-idx="7670" src="/src/img/x.png" />
+									<p class="top">
+										<img src="./assets/img/books_01.png" />
+									</p>
+									<p class="n">울 세림 언니 결혼 넘 축하해요❤️❤️ 점점 더 아름다워지는 울 언니!! 오빠랑 꽃길만 걸어요 ❤️❤️</p>
+									<p class="bottom">
+										<span class="from">- 현주 -</span><br />
+										<span class="date">2022-04-14 19:28:09</span>
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="b">
+									<img class="close" data-idx="7669" src="/src/img/x.png" />
+									<p class="top">
+										<img src="./assets/img/books_01.png" />
+									</p>
+									<p class="n">은총. 추카해~! 근대 내 결혼식에는 왜 안왔어.....</p>
+									<p class="bottom">
+										<span class="from">- 조세호 -</span><br />
+										<span class="date">2022-04-14 19:27:19</span>
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="b">
+									<img class="close" data-idx="7668" src="/src/img/x.png" />
+									<p class="top">
+										<img src="./assets/img/books_01.png" />
+									</p>
+									<p class="n">세림아 결혼 너무 축하하고!! 기쁜날 만끽하구 즐겁게 살아! ❤🧡💛</p>
+									<p class="bottom">
+										<span class="from">- 이지은 -</span><br />
+										<span class="date">2022-04-14 19:14:42</span>
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="b">
+									<img class="close" data-idx="7667" src="/src/img/x.png" />
+									<p class="top">
+										<img src="./assets/img/books_01.png" />
+									</p>
+									<p class="n">결혼 축하축하♡</p>
+									<p class="bottom">
+										<span class="from">- 김창식 -</span><br />
+										<span class="date">2022-04-14 19:13:42</span>
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="b">
+									<img class="close" data-idx="15" src="/src/img/x.png" />
+									<p class="top">
+										<img src="./assets/img/books_01.png" />
+									</p>
+									<p class="n">
+										대리님~~💕 결혼 진심으로 축하드려요🎉 알콩달콩 행복한 가정 잘 꾸려나가시길 응원할게요!! 웨딩사진 너무너무 이뻐요👏❤️❤️
+									</p>
+									<p class="bottom">
+										<span class="from">- 승희 -</span><br />
+										<span class="date">2021-09-13 13:00:14</span>
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="b">
+									<img class="close" data-idx="14" src="/src/img/x.png" />
+									<p class="top">
+										<img src="./assets/img/books_01.png" />
+									</p>
+									<p class="n">
+										사랑하는 사람을 만나 행복해 하며 함께했던 시간만큼, 앞으로도 서로의 버팀목이 되어 함께 즐거울일과 슬플일도 헤쳐나가며,
+										사로 아끼면서 알콩달콩 잘 살기 바랄게💕💕
+									</p>
+									<p class="bottom">
+										<span class="from">- 세림이 이모 -</span><br />
+										<span class="date">2021-09-13 12:54:26</span>
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="b">
+									<img class="close" data-idx="13" src="/src/img/x.png" />
+									<p class="top">
+										<img src="./assets/img/books_01.png" />
+									</p>
+									<p class="n">
+										부러우면 지는 거라고 햇는데, 멋지고 아름다운 두 사람을 보고 있으니 너무 부럽네요. 지금처럼 언제나 행복하실 바랍니다.🌼
+									</p>
+									<p class="bottom">
+										<span class="from">- 키다리아저씨 -</span><br />
+										<span class="date">2021-09-13 12:49:34</span>
+									</p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<a class="b" id="books-write-open">
+									<span class="vcenterbox">
+										<i class="fa fa-pencil-alt"></i><br />
+										방명록 작성하기
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="books-all">
+						<a class="w">작성하기</a>
+						<a class="a">전체보기</a>
+					</div>
+				</div>
+			</div> -->
 
 			<div class="sectionMg layer layer02 clearfix" id="layer_acc_id" style="padding-top: 25px">
 				<div class="lai_1">
@@ -558,18 +830,21 @@
 									<span class="name">이찬오</span>
 									<a class="b_1" onclick="copy_to_clipboard('actnm1')">복사하기</a
 									><textarea id="actnm1" class="txtnone">우리은행 58336420302001</textarea>
+									<!-- <a class="b_2 kakaopaylink" href="https://qr.kakaopay.com/281006011000000310267128"></a> -->
 								</li>
 								<li>
 									하나은행 278-890818-84-707<br />
 									<span class="name">송영선</span>
 									<a class="b_1" onclick="copy_to_clipboard('actnm2')">복사하기</a
 									><textarea id="actnm2" class="txtnone">하나은행 27889081884707</textarea>
+									<!-- <a class="b_2 kakaopaylink" href="https://qr.kakaopay.com/281006011000000310267128"></a> -->
 								</li>
 								<li>
 									카카오뱅크 3333-171938-749<br />
 									<span class="name">이범규</span>
 									<a class="b_1" onclick="copy_to_clipboard('actnm3')">복사하기</a
 									><textarea id="actnm3" class="txtnone">카카오뱅크 3333171938749</textarea>
+									<!-- <a class="b_2 kakaopaylink" href="https://qr.kakaopay.com/281006011000000310267128"></a> -->
 								</li>
 							</ul>
 						</div>
@@ -581,18 +856,21 @@
 									<span class="name">정승현</span>
 									<a class="b_1" onclick="copy_to_clipboard('actnm4')">복사하기</a
 									><textarea id="actnm4" class="txtnone">우리은행 1002435485706</textarea>
+									<!-- <a class="b_2 kakaopaylink" href="https://qr.kakaopay.com/281006011000000310267128"></a> -->
 								</li>
 								<li>
 									하나은행 547-910304-88-407<br />
 									<span class="name">박선용</span>
 									<a class="b_1" onclick="copy_to_clipboard('actnm5')">복사하기</a
 									><textarea id="actnm5" class="txtnone">하나은행 54791030488407</textarea>
+									<!-- <a class="b_2 kakaopaylink" href="https://qr.kakaopay.com/281006011000000310267128"></a> -->
 								</li>
 								<li>
 									카카오뱅크 3333-072227-562<br />
 									<span class="name">정세림</span>
 									<a class="b_1" onclick="copy_to_clipboard('actnm6')">복사하기</a
 									><textarea id="actnm6" class="txtnone">카카오뱅크 3333072227562</textarea>
+									<!-- <a class="b_2 kakaopaylink" href="https://qr.kakaopay.com/281006011000000310267128"></a> -->
 								</li>
 							</ul>
 						</div>
@@ -601,6 +879,160 @@
 				<div class="lai_3"></div>
 				<div class="lai_4"></div>
 			</div>
+			<!-- <div id="att_op" class="rsvp-write-page wpopclass anibox_attend">
+				<form action="/card-attend/Zq6maHONAZmMgTmXvFLKiqeUe5njUQ" method="post">
+					<input type="hidden" name="_token" value="M9cqvYefETyPYbpQpFeIQPEVSR6aX1cUYkgkC7he" />
+					<div class="frm">
+						<div class="frmIn">
+							<a class="clse" style="top: 11px; right: 25px; font-size: 26px; width: 30px; height: 30px"
+								><img style="width: 100%; height: 100%" src="/src/img/close.svg"
+							/></a>
+							<div class="hea">RSVP (참석여부) 전달하기</div>
+							<div class="clearfix" style="margin-top: 10px">
+								<div class="clearfix">
+									<div class="tip emp" style="width: 100%; box-sizing: border-box">참석 여부를 선택해 주세요.</div>
+								</div>
+								<div class="box-chk-wrap" style="margin-top: 9px">
+									<input type="radio" name="attendFlag" class="box-chk" id="attendFlag3" value="true" checked="checked" />
+									<label class="v01_black" for="attendFlag3"><i class="fa fa-check"></i> 참석가능</label>
+									<input type="radio" name="attendFlag" class="box-chk" id="attendFlag" value="false" />
+									<label class="v01_gray" for="attendFlag">참석불가</label>
+								</div>
+							</div>
+							<div class="clearfix" style="margin-top: 25px; margin-bottom: 25px">
+								<div class="clearfix">
+									<div class="tip emp" style="width: 100%; box-sizing: border-box">신랑 & 신부에게 전달될 정보를 입력해 주세요.</div>
+								</div>
+								<div class="box-chk-wrap clearfix">
+									<input type="radio" name="genderFlag" class="box-chk" id="genderFlag3" value="man" />
+									<label class="v02_blue" for="genderFlag3">🤵 신랑측</label>
+									<input type="radio" name="genderFlag" class="box-chk" id="genderFlag" value="woman" checked="checked" />
+									<label class="v02_pink" for="genderFlag">👰 신부측</label>
+								</div>
+							</div>
+							<div class="att-fdver">
+								<span class="nm"
+									><span class="text">성함<b class="spot"></b></span
+								></span>
+								<input type="text" placeholder="(필수) 대표자 한 분의 성함을 입력해 주세요." name="name" maxlength="30" autocomplete="off" />
+							</div>
+							<div class="att-fdver">
+								<span class="nm"><span class="text">연락처</span></span>
+								<input type="text" placeholder="참석자 대표 연락처를 입력해 주세요." name="tel" maxlength="30" autocomplete="off" />
+							</div>
+							<div class="att-fdver">
+								<span class="nm"><span class="text">전달사항</span></span>
+								<input type="text" placeholder="전달하실 내용을 입력해 주세요. (최대 30자)" name="msg" maxlength="30" autocomplete="off" />
+							</div>
+							<div class="att-fdver people-fd">
+								<span class="nm"
+									><span class="text">추가인원<b class="spot"></b></span
+								></span>
+								<select name="cnt">
+									<option value="1" selected>외 0명</option>
+									<option value="2">외 1명</option>
+									<option value="3">외 2명</option>
+									<option value="4">외 3명</option>
+									<option value="5">외 4명</option>
+									<option value="6">외 5명</option>
+									<option value="7">외 6명</option>
+									<option value="8">외 7명</option>
+									<option value="9">외 8명</option>
+									<option value="10">외 9명</option>
+									<option value="11">외 10명</option>
+								</select>
+							</div>
+							<div class="att-fdver companion-fd people-fd" style="display: none">
+								<span class="nm"><span class="text">동행인 성함</span></span>
+								<input
+									type="text"
+									placeholder="참석인원 성함을 쉼표(,)로 구분하여 입력해 주세요."
+									name="companion"
+									maxlength="30"
+									autocomplete="off"
+								/>
+							</div>
+							<div class="clearfix attendflag-fd" style="margin-top: 35px">
+								<div>
+									<div class="tip">식사여부<b class="spot"></b></div>
+								</div>
+								<div style="margin-top: 9px">
+									<input type="radio" name="eatFlag" class="pchbox checkbox-style-v1 middle round" id="eatFlag3" value />
+									<label class="lbock" for="eatFlag3" style="margin-right: 10px">모름</label>
+									<input
+										type="radio"
+										name="eatFlag"
+										class="pchbox checkbox-style-v1 middle round"
+										id="eatFlag"
+										value="eat"
+										checked="checked"
+									/>
+									<label class="lbock" for="eatFlag" style="margin-right: 10px">식사함</label>
+									<input type="radio" name="eatFlag" class="pchbox checkbox-style-v1 middle round" id="eatFlag2" value="not" />
+									<label class="lbock" for="eatFlag2">식사안함</label>
+								</div>
+							</div>
+							<div class="clearfix attendflag-fd" style="margin-top: 30px">
+								<div>
+									<div class="tip">백신접종여부(COVID-19)<b class="spot"></b></div>
+								</div>
+								<div style="font-size: 11px; color: #444; line-height: 1.5">
+									<i class="fa fa-exclamation-circle" style="color: #aaa"></i>
+									접종완료 기준 <span id="vacccmt"></span><br />
+									2차 접종 후 14일이 경과한 날로부터 6개월까지
+								</div>
+								<div style="margin-top: 9px">
+									<input type="radio" name="vaccineFlag" class="pchbox checkbox-style-v1 middle round" id="vaccineFlag3" value />
+									<label class="lbock" for="vaccineFlag3" style="margin-right: 10px">응답없음</label>
+									<input
+										type="radio"
+										name="vaccineFlag"
+										class="pchbox checkbox-style-v1 middle round"
+										id="vaccineFlag"
+										value="not"
+										checked="checked"
+									/>
+									<label class="lbock" for="vaccineFlag" style="margin-right: 10px">미접종</label>
+									<input type="radio" name="vaccineFlag" class="pchbox checkbox-style-v1 middle round" id="vaccineFlag2" value="ok" />
+									<label class="lbock" for="vaccineFlag2">접종완료</label>
+								</div>
+							</div>
+							<div class="att-priv-box">
+								<div class="tip emp" style="margin-top: 0; padding-top: 0">개인정보 수집 및 이용 동의(필수) <b class="spot"></b></div>
+								<p>
+									참석여부 전달을 위한 개인정보 수집 및 이용에 동의해주세요.<br />
+									항목: 성함,연락처,동행인 성함 · 보유기간: 청첩장 이용 종료시 까지
+								</p>
+								<div>
+									<input id="pagree" type="checkbox" class="pchbox rect checkbox-style-v1 middle" />
+									<label for="pagree">동의합니다.</label>
+								</div>
+							</div>
+							<div style="margin-top: 40px">
+								<a class="att-fdver-btn">신랑 & 신부에게 <b>참석의사 전달하기</b></a>
+							</div>
+							<div style="height: 70px"></div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="sectionMg layer layer03 clearfix" id="attendLayerId">
+				<div class="sectionHead anibox">
+					<div class="enstr">R.S.V.P.</div>
+					<span class="name">참석 의사 전달</span>
+					<div class="sectionDesc">
+						현재 거리두기로 인해 백신접종에 따른 <br />수용인원이 달라, 정확한 인원 확인을 <br />위해 꼭 알맞게 체크 부탁드려요!
+					</div>
+					<div class="private-attend" style="text-align: center">
+						<div class="private-attend-one">
+							<a id="att_op_id" class="wrt btn str"
+								><span class="i"><i class="fa fa-check"></i>&nbsp;</span>참석 의사 전달하기</a
+							>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
 			<div class="bttmImgBlur" style="position: relative">
 				<div class="blr blr01"></div>
 				<div class="wave01">
