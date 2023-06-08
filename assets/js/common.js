@@ -26,6 +26,30 @@ $(document).ready(function () {
 		}
 	});
 
+	if ($(".accordion1 li").length == 3) {
+		$(".accordion1").addClass("cnt3");
+	}
+	if ($(".accordion1 li").length == 2) {
+		$(".accordion1").addClass("cnt2");
+	}
+	if ($(".accordion1 li").length == 1) {
+		$(".accordion1").addClass("cnt1");
+	}
+
+	if ($(".accordion2 li").length == 3) {
+		$(".accordion2").addClass("cnt3");
+	}
+	if ($(".accordion2 li").length == 2) {
+		$(".accordion2").addClass("cnt2");
+	}
+	if ($(".accordion2 li").length == 1) {
+		$(".accordion2").addClass("cnt1");
+	}
+
+	$(".pack").click(function () {
+		$(this).parent().toggleClass("active");
+	});
+
 	let g_audioControl = document.getElementById("videoplay");
 	$(".bgmbar .sound").click(function () {
 		if ($(this).find("i.fa").hasClass("fa-volume-off")) {
