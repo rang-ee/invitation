@@ -171,8 +171,12 @@
 					></path>
 				</svg>
 			</a>
+
 			<div class="in">
 				<div class="container">
+					<div class="map_wrapper anibox">
+						<div id="map"></div>
+					</div>
 					<img src="./assets/img/yackdo.png" />
 				</div>
 			</div>
@@ -491,21 +495,29 @@
 					<div class="tbox emp">보타닉 파크 웨딩(강서홀), 오키드홀</div>
 					<div class="tbox">
 						서울시 강서구 마곡중앙5로 6<br />
-						보타닉 푸르지오시티 B2
+						보타닉 푸르지오시티 B2<br />
 					</div>
 					<!-- <div class="tbox"><a class="tel" href="tel:0420000000">Tel. 0420000000</a></div> -->
 				</div>
-				<div class="map_wrapper anibox">
+				<!-- <div class="map_wrapper anibox">
 					<div id="map"></div>
-				</div>
-				<div class="addr-wrap anibox">
+				</div> -->
+				<!-- <div class="addr-wrap anibox">
 					<div style="padding: 0 33px">
 						<a class="ybtn" onclick="openMapImg()">
-							<span>약도 이미지 보기</span>
+							<span>지도 보기</span>
 						</a>
 					</div>
-				</div>
+				</div> -->
 				<ul class="wayto anibox">
+					<li class="li navi" style="display: flex; width: 100%; justify-content: space-evenly">
+						<a class="ybtn" onclick="openMapImg()" style="width: 40%">
+							<span>주소 복사</span>
+						</a>
+						<a class="ybtn" onclick="openMapImg()" style="width: 40%">
+							<span>지도 보기</span>
+						</a>
+					</li>
 					<li class="li navi">
 						<span class="n">네비게이션</span>
 						<div>원하시는 앱을 선택하시면 길안내가 시작됩니다.</div>
@@ -528,7 +540,7 @@
 						<p><span style="color: #3b9f37">●</span> 지선버스: 6642, 6645, 6648번</p>
 						<p><span style="color: #3b9f37">●</span> 마을버스: 강서05-1, 강서07번</p>
 					</li>
-					<li class="li f16">
+					<!-- <li class="li f16">
 						<span class="n f18">자가용</span>
 						<p>● 네비게이션 검색</p>
 						<p>&nbsp;&nbsp;<u>보타닉파크웨딩</u> 주차장</p>
@@ -538,8 +550,7 @@
 						<p>&nbsp;</p>
 						<p>● 주차장 안내</p>
 						<p>&nbsp;&nbsp;<u>건물 주차장</u></p>
-						<!-- <p>&nbsp; &nbsp;· 영남 주차장 (상황에 따라 운영합니다.)</p> -->
-					</li>
+					</li> -->
 				</ul>
 			</div>
 			<div class="sectionMg layer anibox clearfix noticeSection">
