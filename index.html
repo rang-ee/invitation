@@ -18,7 +18,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<meta name="HandheldFriendly" content="true" />
-		<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> -->
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,7 +26,6 @@
 		<link rel="stylesheet" href="./assets/css/snow.css" />
 		<link rel="stylesheet" href="./assets/css/normalize.css" />
 		<link rel="stylesheet" href="./assets/css/animate.css" />
-		<link rel="stylesheet" href="./assets/css/card.show.css?time=7064" />
 		<link rel="stylesheet" href="./assets/css/card.fonts.css?time=7064" />
 		<link rel="stylesheet" href="./assets/css/card.fonts.responsive.show.css?time=7064" />
 		<link rel="stylesheet" href="./assets/css/swiper.bundle.css" loading="lazy" />
@@ -60,7 +58,6 @@
 		<script type="text/javascript" src="./assets/js/kakao.min.js"></script>
 
 		<link rel="stylesheet" href="./assets/css/custom.css" loading="lazy" />
-		<link rel="stylesheet" href="./assets/css/style.css" loading="lazy" />
 
 		<script src="./assets/js/common.js"></script>
 
@@ -171,12 +168,8 @@
 					></path>
 				</svg>
 			</a>
-
 			<div class="in">
 				<div class="container">
-					<div class="map_wrapper anibox">
-						<div id="map"></div>
-					</div>
 					<img src="./assets/img/yackdo.png" />
 				</div>
 			</div>
@@ -495,29 +488,27 @@
 					<div class="tbox emp">보타닉 파크 웨딩(강서홀), 오키드홀</div>
 					<div class="tbox">
 						서울시 강서구 마곡중앙5로 6<br />
-						보타닉 푸르지오시티 B2<br />
+						보타닉 푸르지오시티 B2
+					</div>
+					<div class="tbox ybtn-wrap">
+						<a class="copybtn" onclick="copy_to_clipboard('addr1')">
+							<span>주소복사</span>
+						</a>
+						<textarea id="addr1" class="txtnone">서울시 강서구 마곡중앙5로 6 보타닉 푸르지오시티 주차장</textarea>
 					</div>
 					<!-- <div class="tbox"><a class="tel" href="tel:0420000000">Tel. 0420000000</a></div> -->
 				</div>
-				<!-- <div class="map_wrapper anibox">
+				<div class="map_wrapper anibox">
 					<div id="map"></div>
-				</div> -->
-				<!-- <div class="addr-wrap anibox">
-					<div style="padding: 0 33px">
+				</div>
+				<div class="addr-wrap anibox">
+					<div class="ybtn-wrap">
 						<a class="ybtn" onclick="openMapImg()">
-							<span>지도 보기</span>
+							<span>약도 이미지 보기</span>
 						</a>
 					</div>
-				</div> -->
+				</div>
 				<ul class="wayto anibox">
-					<li class="li navi" style="display: flex; width: 100%; justify-content: space-evenly">
-						<a class="ybtn" onclick="openMapImg()" style="width: 40%">
-							<span>주소 복사</span>
-						</a>
-						<a class="ybtn" onclick="openMapImg()" style="width: 40%">
-							<span>지도 보기</span>
-						</a>
-					</li>
 					<li class="li navi">
 						<span class="n">네비게이션</span>
 						<div>원하시는 앱을 선택하시면 길안내가 시작됩니다.</div>
@@ -540,7 +531,7 @@
 						<p><span style="color: #3b9f37">●</span> 지선버스: 6642, 6645, 6648번</p>
 						<p><span style="color: #3b9f37">●</span> 마을버스: 강서05-1, 강서07번</p>
 					</li>
-					<!-- <li class="li f16">
+					<li class="li f16">
 						<span class="n f18">자가용</span>
 						<p>● 네비게이션 검색</p>
 						<p>&nbsp;&nbsp;<u>보타닉파크웨딩</u> 주차장</p>
@@ -550,7 +541,8 @@
 						<p>&nbsp;</p>
 						<p>● 주차장 안내</p>
 						<p>&nbsp;&nbsp;<u>건물 주차장</u></p>
-					</li> -->
+						<!-- <p>&nbsp; &nbsp;· 영남 주차장 (상황에 따라 운영합니다.)</p> -->
+					</li>
 				</ul>
 			</div>
 			<div class="sectionMg layer anibox clearfix noticeSection">
@@ -836,21 +828,21 @@
 								<li>
 									우리은행 5833-642030-2001<br />
 									<span class="name">이찬오</span>
-									<a class="b_1" onclick="copy_to_clipboard2('actnm1')">복사하기</a
+									<a class="b_1" onclick="copy_to_clipboard('actnm1')">복사하기</a
 									><textarea id="actnm1" class="txtnone">우리은행 58336420302001</textarea>
 									<!-- <a class="b_2 kakaopaylink" href="https://qr.kakaopay.com/281006011000000310267128"></a> -->
 								</li>
 								<li>
 									하나은행 278-890818-84-707<br />
 									<span class="name">송영선</span>
-									<a class="b_1" onclick="copy_to_clipboard2('actnm2')">복사하기</a
+									<a class="b_1" onclick="copy_to_clipboard('actnm2')">복사하기</a
 									><textarea id="actnm2" class="txtnone">하나은행 27889081884707</textarea>
 									<!-- <a class="b_2 kakaopaylink" href="https://qr.kakaopay.com/281006011000000310267128"></a> -->
 								</li>
 								<li>
 									카카오뱅크 3333-171938-749<br />
 									<span class="name">이범규</span>
-									<a class="b_1" onclick="copy_to_clipboard2('actnm3')">복사하기</a
+									<a class="b_1" onclick="copy_to_clipboard('actnm3')">복사하기</a
 									><textarea id="actnm3" class="txtnone">카카오뱅크 3333171938749</textarea>
 									<!-- <a class="b_2 kakaopaylink" href="https://qr.kakaopay.com/281006011000000310267128"></a> -->
 								</li>
@@ -862,21 +854,21 @@
 								<li>
 									우리은행 1002-435-485706<br />
 									<span class="name">정승현</span>
-									<a class="b_1" onclick="copy_to_clipboard2('actnm4')">복사하기</a
+									<a class="b_1" onclick="copy_to_clipboard('actnm4')">복사하기</a
 									><textarea id="actnm4" class="txtnone">우리은행 1002435485706</textarea>
 									<!-- <a class="b_2 kakaopaylink" href="https://qr.kakaopay.com/281006011000000310267128"></a> -->
 								</li>
 								<li>
 									하나은행 547-910304-88-407<br />
 									<span class="name">박선용</span>
-									<a class="b_1" onclick="copy_to_clipboard2('actnm5')">복사하기</a
+									<a class="b_1" onclick="copy_to_clipboard('actnm5')">복사하기</a
 									><textarea id="actnm5" class="txtnone">하나은행 54791030488407</textarea>
 									<!-- <a class="b_2 kakaopaylink" href="https://qr.kakaopay.com/281006011000000310267128"></a> -->
 								</li>
 								<li>
 									카카오뱅크 3333-072227-562<br />
 									<span class="name">정세림</span>
-									<a class="b_1" onclick="copy_to_clipboard2('actnm6')">복사하기</a
+									<a class="b_1" onclick="copy_to_clipboard('actnm6')">복사하기</a
 									><textarea id="actnm6" class="txtnone">카카오뱅크 3333072227562</textarea>
 									<!-- <a class="b_2 kakaopaylink" href="https://qr.kakaopay.com/281006011000000310267128"></a> -->
 								</li>

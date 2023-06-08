@@ -96,16 +96,6 @@ function copy_to_clipboard(txtId) {
 	document.body.removeChild(t);
 	alert("복사가 완료되었습니다.");
 }
-function copy_to_clipboard2(txtId) {
-	var copytxt = $("#" + txtId).val();
-	const t = document.createElement("textarea");
-	document.body.appendChild(t);
-	t.value = copytxt;
-	t.select();
-	document.execCommand("copy");
-	document.body.removeChild(t);
-	alert("복사가 완료되었습니다.");
-}
 function remove_focus_clipboard() {
 	var sel = window.getSelection ? window.getSelection() : document.selection;
 	if (sel) {
