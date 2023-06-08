@@ -215,13 +215,12 @@ function sendLink() {
 	let t = $("input[name=kt_01]").val();
 	let d = $("input[name=kt_02]").val();
 
-	let kImg = "https://www.velysound.com/assets/img/284A1205.JPG";
 	Kakao.Link.sendDefault({
 		objectType: "feed",
 		content: {
 			title: "소중한 분들을 초대합니다💛",
 			// description: "소중한 분들을 초대합니다❤︎",
-			imageUrl: kImg,
+			imageUrl: "https://www.velysound.com/assets/img/284A1205.JPG",
 			link: {
 				mobileWebUrl: "https://www.velysound.com/",
 				webUrl: "https://www.velysound.com/",
@@ -229,7 +228,7 @@ function sendLink() {
 		},
 		buttons: [
 			{
-				title: "청첩장 보러 가기",
+				title: "청첩장 보러가기",
 				link: {
 					mobileWebUrl: "https://www.velysound.com/",
 					webUrl: "https://www.velysound.com/",
