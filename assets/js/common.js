@@ -191,7 +191,7 @@ function sendLink() {
 	let t = $("input[name=kt_01]").val();
 	let d = $("input[name=kt_02]").val();
 
-	let kImg = "https://www.velysound.com/invitation/img/284A1205.JPG";
+	let kImg = "https://www.velysound.com/assets/img/284A1205.JPG";
 	Kakao.Link.sendDefault({
 		objectType: "feed",
 		content: {
