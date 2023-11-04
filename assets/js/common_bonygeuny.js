@@ -220,18 +220,18 @@ function sendLink() {
 		content: {
 			title: "소중한 분들을 초대합니다💛",
 			// description: "소중한 분들을 초대합니다❤︎",
-			imageUrl: "https://www.velysound.com/assets/img/2.jpg",
+			imageUrl: "https://www.velysound.com/assets/img/gallary/bonygeuny/1.jpeg",
 			link: {
-				mobileWebUrl: "https://www.velysound.com/",
-				webUrl: "https://www.velysound.com/",
+				mobileWebUrl: "https://www.velysound.com/bonygeuny.html",
+				webUrl: "https://www.velysound.com/bonygeuny.html",
 			},
 		},
 		buttons: [
 			{
 				title: "청첩장 보러가기",
 				link: {
-					mobileWebUrl: "https://www.velysound.com/",
-					webUrl: "https://www.velysound.com/",
+					mobileWebUrl: "https://www.velysound.com/bonygeuny.html",
+					webUrl: "https://www.velysound.com/bonygeuny.html",
 				},
 			},
 		],
