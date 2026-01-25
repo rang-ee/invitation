@@ -170,11 +170,11 @@ function zoomGallOpen(imgNumb) {
 }
 
 function initCalander() {
-	let lastDate = moment("2023-11-25").locale("ko");
+	let lastDate = moment("2026-05-09").locale("ko");
 	let lastDay = parseInt(lastDate.endOf("month").format("D"));
 
 	let week = new Array(0, 1, 2, 3, 4, 5, 6);
-	let marriedDate = new moment("2023-11-01").locale("ko").day();
+	let marriedDate = new moment("2026-05-01").locale("ko").day();
 	let todayLabel = week[marriedDate];
 
 	let dday = 25; // 달력 하이라이트 결혼식일
