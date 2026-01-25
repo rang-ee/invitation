@@ -220,18 +220,18 @@ function sendLink() {
 		content: {
 			title: "소중한 분들을 초대합니다💛",
 			// description: "소중한 분들을 초대합니다❤︎",
-			imageUrl: "https://www.velysound.com/assets/img/gallary/bonygeuny/1.jpeg",
+			imageUrl: "https://rang-ee.github.io/invitation/assets/img/gallary/jiyoung/1.jpeg",
 			link: {
-				mobileWebUrl: "https://www.velysound.com/bonygeuny.html",
-				webUrl: "https://www.velysound.com/bonygeuny.html",
+				mobileWebUrl: "https://rang-ee.github.io/invitation/jiyoung.html",
+				webUrl: "https://rang-ee.github.io/invitation/jiyoung.html",
 			},
 		},
 		buttons: [
 			{
 				title: "청첩장 보러가기",
 				link: {
-					mobileWebUrl: "https://www.velysound.com/bonygeuny.html",
-					webUrl: "https://www.velysound.com/bonygeuny.html",
+					mobileWebUrl: "https://rang-ee.github.io/invitation/jiyoung.html",
+					webUrl: "https://rang-ee.github.io/invitation/jiyoung.html",
 				},
 			},
 		],
@@ -277,7 +277,7 @@ function swipeGallery02() {
 let intervalId;
 function getClock() {
 	const now = moment();
-	const wday = moment("2023-11-25 13:30:00");
+	const wday = moment("2026-05-09 14:20:00");
 
 	const day = parseInt(moment.duration(wday.diff(now)).asDays());
 	const hours = moment.duration(wday.diff(now)).hours();
