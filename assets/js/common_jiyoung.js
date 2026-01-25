@@ -50,18 +50,18 @@ $(document).ready(function () {
 		$(this).parent().toggleClass("active");
 	});
 
-	let g_audioControl = document.getElementById("videoplay");
-	$(".bgmbar .sound").click(function () {
-		if ($(this).find("i.fa").hasClass("fa-volume-off")) {
-			$(this).find("i.fa").removeClass("fa-volume-off");
-			$(this).find("i.fa").addClass("fa-volume-up");
-			g_audioControl?.play();
-		} else {
-			$(this).find("i.fa").addClass("fa-volume-off");
-			$(this).find("i.fa").removeClass("fa-volume-up");
-			g_audioControl?.pause();
-		}
-	});
+	// let g_audioControl = document.getElementById("videoplay");
+	// $(".bgmbar .sound").click(function () {
+	// 	if ($(this).find("i.fa").hasClass("fa-volume-off")) {
+	// 		$(this).find("i.fa").removeClass("fa-volume-off");
+	// 		$(this).find("i.fa").addClass("fa-volume-up");
+	// 		g_audioControl?.play();
+	// 	} else {
+	// 		$(this).find("i.fa").addClass("fa-volume-off");
+	// 		$(this).find("i.fa").removeClass("fa-volume-up");
+	// 		g_audioControl?.pause();
+	// 	}
+	// });
 
 	if ($("#calander").is(":visible")) {
 		initCalander();
