@@ -177,7 +177,7 @@ function initCalander() {
 	let marriedDate = new moment("2026-05-01").locale("ko").day();
 	let todayLabel = week[marriedDate];
 
-	let dday = 25; // 달력 하이라이트 결혼식일
+	let dday = 9; // 달력 하이라이트 결혼식일
 
 	let c = "";
 	let j = 0;
